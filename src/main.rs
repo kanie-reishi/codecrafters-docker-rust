@@ -24,6 +24,7 @@ fn main() -> Result<()> {
         let std_err = std::str::from_utf8(&output.stderr)?;
          print!("{}", std_out.to_owned() + std_err);
      } else {
+        print!("Check");
          std::process::exit(1);
      }
 

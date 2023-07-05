@@ -22,9 +22,9 @@ fn main() -> Result<()> {
      if output.status.success() {
         let std_out = std::str::from_utf8(&output.stdout)?;
         let std_err = std::str::from_utf8(&output.stderr)?;
-         print!("{}", std_out.to_owned() + std_err);
+         print!("{}", std_out);
+         print!("{}", std_err);
      } else {
-        print!("Check");
          std::process::exit(1);
      }
 

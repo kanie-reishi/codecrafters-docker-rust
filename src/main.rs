@@ -23,7 +23,7 @@ fn main() -> Result<()> {
         let std_out = std::str::from_utf8(&output.stdout)?;
         let std_err = std::str::from_utf8(&output.stderr)?;
          print!("{}", std_out);
-         print!("{}", std_err);
+         eprint!("{}", std_err);
      } else {
          std::process::exit(1);
      }

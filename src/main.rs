@@ -23,7 +23,7 @@ fn main() -> Result<()> {
         let std_out = std::str::from_utf8(&output.stdout)?;
          print!("{}", std_out);
      } else {
-        let std_err = std:str::from_utf8(&output.stderr)?;
+        let std_err = std::str::from_utf8(&output.stderr)?;
          print!("{}", std_err);
      }
 
